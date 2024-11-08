@@ -1,0 +1,139 @@
+/* src/App.css */
+
+/* Cores principais */
+:root {
+    --primary-color: #023c3d; /* Verde royal */
+    --secondary-color: #f8f8f8; /* Cinza claro */
+    --text-color: #333333;      /* Cinza escuro */
+    --background-color: #ffffff;
+    --button-color: #006400;    /* Verde escuro para contraste */
+    --hover-color: #2e8b57;     /* Verde suave para hover */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+nav {
+    background-color: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(#023c3d);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p, footer ul li {
+    margin: 5px 0;
+}
+
+/* Botões */
+button {
+    background-color: var(#023c3d);
+    color:#023c3d;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Formulários */
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Títulos e textos */
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+}
+
+/* Dashboard e Perfil */
+.dashboard, .profile {
+    padding: 20px;
+}
+
+.dashboard ul, .profile ul {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Login */
